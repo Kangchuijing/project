@@ -4,19 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+		body{
+			background-color: greenyellow;
+		}
 		h3{
 			text-align: center;
 			font-size: 36px;
+			margin: 0;
+			padding: 0;
 		}
 		form{
 			width: 500px;
-			height: 250px;
-			margin: 100px auto;
+			height: 400px;
+			margin: 20px auto;
 			border: 1px solid #ccc;
 			background-color: orange;
 			text-align: center;
 			padding-top: 55px;
 			padding-bottom: 25px;
+			border-radius: 20px;
 		}
 		label{
 			width: 150px;
@@ -41,11 +47,12 @@
 		<label for="gname">商品名称</label><input type="text" id="gname" name="gname" autocomplete="off"><br>
 		<label for="gpicture">图片路径</label><input type="text" id="gpicture" name="gpicture" autocomplete="off"><br>
 		<label for="gpirce">商品价格</label><input type="text" id="gpirce" name="gprice" autocomplete=off""><br>
-		<label for="gpirce">商品详情图1</label><input type="text" id="gpicturedetail" name="gpicturedetail"><br>
-		<label for="gpirce">商品详情图2</label><input type="text" id="gpicturedetail2" name="gpicturedetail2"><br>
-		<label for="gpirce">商品详情图3</label><input type="text" id="gpicturedetail3" name="gpicturedetail3"><br>
-		<label for="gpirce">商品详情图4</label><input type="text" id="gpicturedetail4" name="gpicturedetail4"><br>
-		<label for="gpirce">商品详情图5</label><input type="text" id="gpicturedetail5" name="gpicturedetail5"><br>
+		<label for="gpricebefore">商品原价格</label><input type="text" id="gpricebefore" name="gpricebefore" autocomplete=off""><br>
+		<label for="gpicturedetail">商品详情图1</label><input type="text" id="gpicturedetail" name="gpicturedetail"><br>
+		<label for="gpicturedetail1">商品详情图2</label><input type="text" id="gpicturedetail1" name="gpicturedetail1"><br>
+		<label for="gpicturedetail2">商品详情图3</label><input type="text" id="gpicturedetail2" name="gpicturedetail2"><br>
+		<label for="gpicturedetail3">商品详情图4</label><input type="text" id="gpicturedetail3" name="gpicturedetail3"><br>
+		<label for="gpicturedetail4">商品详情图5</label><input type="text" id="gpicturedetail4" name="gpicturedetail4"><br>
 		<button type="submit">提交数据</button>
 	</form>
 </body>
