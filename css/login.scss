@@ -1,0 +1,74 @@
+@charset "UTF-8";
+#main{
+  font-size: 12px;
+  background-color: #fcfcfc;
+  .left{
+    margin:{
+      top: 74px;
+      left: 194px;
+    }
+  }
+  .right{
+    width: 332px;
+    height: 332px;
+    padding: 44px 34px 34px 34px;
+    background-color: #fff;
+    position: relative;
+    margin:{
+      top: 28px;
+      left: 70px;
+    }
+    .top{
+      margin-bottom: 9px;
+    }
+    p{
+      color: #666666;
+      font-weight: 700;
+    }
+    input{
+      width: 332px;
+      height: 52px;
+      margin-bottom: 9px;
+    }
+    input[type=checkbox]{
+      width: 20px;
+      height: 20px;
+      margin-bottom: 0;
+      background: rgba(0,0,0,0) url("../images/login_new.png") no-repeat -346px 360px;
+      border-color: #999999;
+      vertical-align: middle;
+    }
+    span{
+      color: #999999;
+      vertical-align: middle;
+    }
+    input[type=text],input[type=password]{
+      padding-left: 64px;
+      width: 268px;
+    }
+    #forget{
+      margin-left: 200px;
+      vertical-align: middle;
+      color: #999;
+    }
+    input[type=submit]{
+      margin-top: 12px;
+    }
+    span.user{
+      position: absolute;
+      background: url("../images/login_new.png") no-repeat -48px 0;
+      width: 20px;
+      height: 17px;
+      top: 88px;
+      left: 53px;
+    }
+    span.pwd{
+      position: absolute;
+      background: url("../images/login_new.png") no-repeat -150px 0;
+      width: 20px;
+      height: 17px;
+      top: 152px;
+      left: 53px;
+    }
+  }
+}

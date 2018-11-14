@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/loginadregesit.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div id="logo" class="fl">
+            <a href="../index.html"><img src="../images/xiding.jpg" alt=""/></a>
+        </div>
+        <div id="info" class="fr">
+            您好，欢迎光临一号店！<a href="javascript:;">请登录</a><span>帮助中心</span>
+        </div>
+    </div>
+    <div id="main" class="clearfix">
+        <div class="left fl">
+            <img src="../images/5be40378N005aae2d.jpg" alt=""/>
+        </div>
+        <div class="right fl">
+            <div class="top clearfix">
+                <p class="fl">1号店用户登录</p><a href="regesit.html" class="fr">注册新账号</a>
+            </div>
+            <form action="../php/login.php" method="post">
+                <input type="text" placeholder="邮箱/手机/用户名" name="user" id="user" autocomplete="off"/><br/>
+                <input type="password" placeholder="密码" name="password" id="password" /><br/>
+                <input type="checkbox" name="remenber"/><span>自动登录</span><a href="javascript:void(0);" id="forget">忘记密码?</a>
+                <input type="submit" value="登录">
+            </form>
+            <span class="user"></span>
+            <span class="pwd"></span>
+        </div>
+    </div>
+    <div id="footer">
+        <p>沪ICP备10650468号 | 沪B2-20170039 | 营业执照</p>
+        <p>Copyright&copy;1号店网上超市 2017 - 2018 ，All Rights Resevered</p>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src='../js/login.js'></script>
+</body>
+</html>

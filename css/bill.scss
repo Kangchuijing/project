@@ -1,0 +1,308 @@
+@charset "UTF-8";
+#header{
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 3px 2px 0 #000;
+  border-bottom: 1px solid #c0c0c0;
+  #shouye{
+    margin-left: 160px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #666666;
+  }
+  #info{
+    margin-right: 80px;
+    margin-top: 20px;
+    color: #999999;
+    font-size: 12px;
+    span{
+      margin-left: 36px;
+      color: #333;
+    }
+  }
+}
+//main部分
+#main{
+  overflow: hidden;
+  background-color: #f8f8f8;
+  h1{
+    margin-top: 24px;
+    a{
+      height: 30px;
+      display: inline-block;
+    }
+    a.logo{
+      width: 40px;
+      background: url("../images/logo.png") no-repeat top center;
+    }
+    a.logo_text{
+      width: 74px;
+      background: url("../images/logo_txt.png") no-repeat top center;
+    }
+  }
+  .line{
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-left: 30px;
+  }
+  span.choose{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    vertical-align: middle;
+    font-family: iconfont;
+    position: relative;
+    line-height: 17px;
+    &:before{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      font-size: 17px;
+      color: #ff5e5e;
+      top: -1px;
+      left: -1px;
+    }
+}
+  .table_header{
+    height: 39px;
+    line-height: 39px;
+    margin-top: 24px;
+    color: #66667f;
+    font-size: 12px;
+    a{
+      color: #666666;
+      font-size: 12px;
+    }
+    span.goods_info{
+      margin-left: 70px;
+    }
+    span.danjia{
+      margin-left: 150px;
+    }
+    span.shuliang{
+      margin-left: 160px;
+    }
+    span.xiaoji{
+      margin-left: 170px;
+    }
+    span.caozuo{
+      margin-left: 90px;
+    }
+  }
+  .table_body{
+    margin-top: 20px;
+    .an_info{
+      .ziyi{
+        height: 55px;
+        line-height: 55px;
+        font-size: 12px;
+        -webkit-border-radius: 3px 3px 0 0;
+        -moz-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        a{
+          color: #333;
+        }
+      }
+      .goods_detail{
+        overflow: hidden;
+        height: 163px;
+        border-top: none;
+        -webkit-border-radius: 0 0 3px 3px;
+        -moz-border-radius: 0 0 3px 3px;
+        border-radius: 0 0 3px 3px;
+        p.extro{
+          font-size: 12px;
+          color: #666666;
+          margin: {
+            top: 16px;
+            bottom: 30px;
+          }
+        }
+        span.huangou{
+          display: inline-block;
+          padding: 4px;
+          margin-right: 10px;
+          font-size: 12px;
+          color: #fff;
+          background-color: #fda55b;
+        }
+        .goods_info{
+          font-size: 12px;
+          .left{
+            a,img{
+              vertical-align: middle;
+            }
+          }
+          .center{
+            width: 260px;
+            font-size: 12px;
+            margin-left: 20px;
+            p{
+              color: #333;
+            }
+            span{
+              color: #aaaaaa;
+            }
+          }
+          .price{
+            color: #333;
+            margin-left: 48px;
+          }
+          div.number{
+            width: 80px;
+            height: 22px;
+            padding: 3px 0;
+            border: 1px solid #dfdfdf;
+            margin-left: 106px;
+            b{
+              width: 20px;
+              text-align: center;
+              line-height: 24px;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+            }
+            input{
+              text-align: center;
+              font-size: 14px;
+              width: 38px;
+              border-top: 0;
+              border-bottom: 0;
+              border-left: 1px solid #dfdfdf;
+              border-right: 1px solid #dfdfdf;
+            }
+          }
+          .xiaoji{
+            margin-left: 126px;
+          }
+          .option{
+            width: 20px;
+            height: 20px;
+            font-family: iconfont;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 120px;
+          }
+        }
+
+      }
+      .pay{
+        height: 50px;
+        border-top: 0;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 50px;
+        padding-right: 30px;
+        .allpay{
+          color: #333;
+          span{
+            color: #ff5e5e;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .payall{
+      height: 58px;
+      background-color: #fff;
+      margin-bottom: 50px;
+      line-height: 58px;
+      .left{
+        font-size: 12px;
+        padding-left: 30px;
+        a{
+          color: #333;
+        }
+      }
+      .right{
+        font-size: 12px;
+        color: #333;
+        .has_choose{
+          color: #ff5e5e;
+        }
+        .payfor{
+          font-size: 16px;
+          font-weight: 700;
+          color: #ff5e5e;
+        }
+        button{
+          width: 110px;
+          height: 60px;
+          border: 0;
+          font-size: 16px;
+          color: #fff;
+          margin-left: 25px;
+          cursor: pointer;
+          background-color: #ff6c6c;
+        }
+      }
+    }
+  }
+}
+//底部开始
+#foot{
+  height: 448px;
+  background-color: #fff;
+  #foot_top li{
+    width: 267px;
+    height: 126px;
+    float: left;
+    padding-top: 28px;
+    div.right{
+      padding-top: 10px;
+      margin-left: 20px;
+      h5{
+        font-size: 18px;
+        color: #333333;
+      }
+      p{
+        font-size: 14px;
+        color: #999;
+      }
+    }
+    div{
+      float: left;
+      height: 70px;
+    }
+  }
+  #foot_link{
+    dl{
+      float: left;
+      margin-right: 100px;
+    }
+    dt{
+      color: #666666;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    dd{
+      color: #666666;
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+  #foot_bottom{
+    font-size: 12px;
+    text-align: center;
+    p{
+      color:#333;
+    }
+    #copyright{
+      color: #666666;
+      margin:{
+        top:16px;
+        bottom:25px;
+      }
+    }
+    #beian{
+      img{
+        margin-right: 10px;
+      }
+    }
+  }
+}

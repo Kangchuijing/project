@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h3{
+			text-align: center;
+			font-size: 36px;
+		}
+		form{
+			width: 500px;
+			height: 250px;
+			margin: 100px auto;
+			border: 1px solid #ccc;
+			background-color: orange;
+			text-align: center;
+			padding-top: 55px;
+			padding-bottom: 25px;
+		}
+		label{
+			width: 150px;
+			display: inline-block;
+			font-weight: 700;
+		
+		}
+		input{
+			width: 200px;
+			height: 28px;
+		}
+		button[type=submit]{
+			width: 80px;
+			height: 30px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+    <h3>一号店商品信息录入系统</h3>
+	<form action="../php/addgoods.php" method="post">
+		<label for="gname">商品名称</label><input type="text" id="gname" name="gname" autocomplete="off"><br>
+		<label for="gpicture">图片路径</label><input type="text" id="gpicture" name="gpicture" autocomplete="off"><br>
+		<label for="gpirce">商品价格</label><input type="text" id="gpirce" name="gprice" autocomplete=off""><br>
+		<label for="gpirce">商品详情图1</label><input type="text" id="gpicturedetail" name="gpicturedetail"><br>
+		<label for="gpirce">商品详情图2</label><input type="text" id="gpicturedetail2" name="gpicturedetail2"><br>
+		<label for="gpirce">商品详情图3</label><input type="text" id="gpicturedetail3" name="gpicturedetail3"><br>
+		<label for="gpirce">商品详情图4</label><input type="text" id="gpicturedetail4" name="gpicturedetail4"><br>
+		<label for="gpirce">商品详情图5</label><input type="text" id="gpicturedetail5" name="gpicturedetail5"><br>
+		<button type="submit">提交数据</button>
+	</form>
+</body>
+</html>

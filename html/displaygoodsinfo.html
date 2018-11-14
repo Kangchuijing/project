@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>显示数据</title>
+	<style>
+		body{
+			overflow: scroll;
+		}
+		table{
+			width: 10500px;
+			border-collapse: collapse;
+		}
+		th,td{
+			width: 400px;
+			display: inline-block;
+			text-align: center;
+		}
+		tr{
+			overflow: hidden;
+		}
+		.line{
+			background-color: #4cb4e7;
+			font-size: 14px;
+			color: #333;
+		}
+
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr class="line">
+			<th>商品id</th>
+			<th>商品名</th>
+			<th>商品外部展示图</th>
+			<th>商品价格</th>
+			<th>商品原价</th>
+			<th>商品内部详情小图</th>
+			<th>商品内部详情展示图</th>
+			<th>商品内部详情大图</th>
+			<th>商品内部详情小图1</th>
+			<th>商品内部详情展示图1</th>
+			<th>商品内部详情大图1</th>
+			<th>商品内部详情小图2</th>
+			<th>商品内部详情展示图2</th>
+			<th>商品内部详情大图2</th>
+			<th>商品内部详情小图3</th>
+			<th>商品内部详情展示图3</th>
+			<th>商品内部详情大图3</th>
+			<th>商品内部详情小图4</th>
+			<th>商品内部详情展示图4</th>
+			<th>商品内部详情大图4</th>
+			<th>操作</th>
+		</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<script src="../js/jquery.min.js"></script>
+	<script>
+		console.log($);
+		$.getJSON("../php/displaygoodsinfo.php",function(res){
+			var str = "";
+			for (var i = 0; i < res.length ; i++) {
+				str += "<tr>";
+				for(var key in res[i]){
+					str += `
+						<td>${res[i][key]}</td>
+					`;
+				}
+				str += "</tr>";
+			}
+			$("tbody").html(str);
+		})
+		
+	</script>
+</body>
+</html>

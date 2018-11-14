@@ -1,0 +1,58 @@
+#main {
+  font-size: 12px;
+  background-color: #fcfcfc; }
+  #main .left {
+    margin-top: 74px;
+    margin-left: 194px; }
+  #main .right {
+    width: 332px;
+    height: 332px;
+    padding: 44px 34px 34px 34px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 28px;
+    margin-left: 70px; }
+    #main .right .top {
+      margin-bottom: 9px; }
+    #main .right p {
+      color: #666666;
+      font-weight: 700; }
+    #main .right input {
+      width: 332px;
+      height: 52px;
+      margin-bottom: 9px; }
+    #main .right input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 0;
+      background: rgba(0, 0, 0, 0) url("../images/login_new.png") no-repeat -346px 360px;
+      border-color: #999999;
+      vertical-align: middle; }
+    #main .right span {
+      color: #999999;
+      vertical-align: middle; }
+    #main .right input[type=text], #main .right input[type=password] {
+      padding-left: 64px;
+      width: 268px; }
+    #main .right #forget {
+      margin-left: 200px;
+      vertical-align: middle;
+      color: #999; }
+    #main .right input[type=submit] {
+      margin-top: 12px; }
+    #main .right span.user {
+      position: absolute;
+      background: url("../images/login_new.png") no-repeat -48px 0;
+      width: 20px;
+      height: 17px;
+      top: 88px;
+      left: 53px; }
+    #main .right span.pwd {
+      position: absolute;
+      background: url("../images/login_new.png") no-repeat -150px 0;
+      width: 20px;
+      height: 17px;
+      top: 152px;
+      left: 53px; }
+
+/*# sourceMappingURL=login.css.map */

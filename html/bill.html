@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>结算页面</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/bill.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+</head>
+<body>
+<div id="bill">
+    <!-- 顶部信息-->
+    <div id="header" class="clearfix">
+        <div id="shouye" class="fl">
+            <a href="../index.html"> 一号店首页</a>
+        </div>
+        <div id="info" class="fr">
+            您好，欢迎光临一号店！<a href="#">请登录</a><span>帮助中心</span>
+        </div>
+    </div>
+    <!-- main信息-->
+    <div id="main">
+        <div class="main w">
+            <h1><a href="../index.html" class="logo"></a><a href="javascript:;" class="logo_text"></a></h1>
+
+            <div class="table_info">
+                <div class="table_header line">
+                    <a href="javascript:;" class="select_all"><span class="choose"></span>&nbsp;&nbsp;全选</a><span
+                        class="goods_info">商品信息</span>
+                    <span class="danjia">单价（元）</span><span class="shuliang">数量</span><span
+                        class="xiaoji">小计（元）</span><span class="caozuo">操作</span>
+                </div>
+                <div class="table_body">
+                    <div class="tbody_all">
+                        <!-- <div class="an_info">
+                            <div class="ziyi line">
+                                <a href="javascript:;" class="ziyin table_select"><span class="choose"></span>&nbsp;&nbsp;自营</a>
+                            </div>
+                            <div class="goods_detail line">
+                                <p class="extro">
+                                    <a href="javascript:;" class="huangou table_select">
+                                        <span class="choose"></span>&nbsp;&nbsp;<span class="huangou">换购</span></a>
+                                    指定商品购买一件可优惠换购热销商品
+                                </p>
+
+                                <div class="goods_info clearfix">
+                                    <div class="left fl">
+                                        <a href="javascript:;" class="ziyin_goods table_select"><span
+                                                class="choose goods_selected"></span>&nbsp;&nbsp;</a>
+                                        <img src="../images/goods_small/5b59317bNece5a0e4.jpg" alt=""
+                                             class="detail_img"/>
+                                    </div>
+                                    <div class="center detail fl">
+                                        <p class="detail">Zesper佳沛新西兰阳光奇异果6个装，经典36号果</p>
+                                        <span>经典36果</span>
+                                    </div>
+                                    <div class="price fl">
+                                        9.9
+                                    </div>
+                                    <div class="number fl">
+                                        <b id="down">-</b><input type="text" value="1" id="number"/><b id="up">+</b>
+                                    </div>
+                                    <div class="xiaoji fl">
+                                        ￥999
+                                    </div>
+                                    <div class="option fl icon-shanchu">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay line">
+                                <div class="allpay fr"> 商品总价:&nbsp;<span>￥59.9</span></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="payall">
+                        <div class="left fl">
+                            <a href="javascript:;" class="select_all"><span class="choose"></span>&nbsp;&nbsp;全选</a>
+                        </div>
+                        <div class="right fr">
+                            <span class="yixuan">已选商品：&nbsp;<b class="has_choose">0</b>&nbsp;件</span>
+                            <span class="heji">合计：&nbsp<b class="payfor" readonly="true">￥0</b></span>
+                            <button>去结算</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息-->
+    <div id="foot">
+        <div id="foot_content" class="w">
+            <div id="foot_top">
+                <ul class="clearfix">
+                    <li class="clearfix">
+                        <div class="left"><img src="../images/cgqi0lwskgmadbnsaaapzvcsh3e68900.jpg" alt=""/></div>
+                        <div class="right">
+                            <h5>正品保障</h5>
+
+                            <p>正品行货放心选购</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="left"><img src="../images/chebulwsk4iada_aaaam544hhn818600.jpg" alt=""/></div>
+                        <div class="right">
+                            <h5>满86包邮</h5>
+
+                            <p>满86元 免运费</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="left"><img src="../images/cgqiz1wsli-adao3aaan5b_ut2i80100.jpg" alt=""/></div>
+                        <div class="right">
+                            <h5>售后无忧</h5>
+
+                            <p>7天无理由退货</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="left"><img src="../images/chei11wsyiyalbbiaaan9leek5m33200.jpg" alt=""/></div>
+                        <div class="right">
+                            <h5>准时送达</h5>
+
+                            <p>收货时间由您做主</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="foot_link" class="clearfix">
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd>购物流程</dd>
+                    <dd>会员制度</dd>
+                    <dd>订单查询</dd>
+                    <dd>发票制度</dd>
+                    <dd>网站地图</dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>货到付款</dd>
+                    <dd>网上支付</dd>
+                    <dd>礼品卡支付</dd>
+                    <dd>其他支付</dd>
+                </dl>
+                <dl>
+                    <dt>配送服务</dt>
+                    <dd>配送进度查询</dd>
+                    <dd>商品验收与签货</dd>
+                </dl>
+                <dl>
+                    <dt>售后保障</dt>
+                    <dd>退换货政策</dd>
+                    <dd>联系客服</dd>
+                </dl>
+                <dl>
+                    <dt>APP更优惠</dt>
+                    <dd><img src="../images/qryhd.png" alt=""/></dd>
+                </dl>
+                <dl>
+                    <dt>加微信查订单</dt>
+                    <dd><img src="../images/5a2798bbn479da3df.jpg" alt=""/></dd>
+                </dl>
+            </div>
+            <div id="foot_bottom">
+                <p>
+                    沪ICP备16054068号 | 经营证照 | 互联网药品信息服务资格证 | 违法和不良信息举报电话： 0527-88100253 | 沪B2-20170039 | 沪公网安备
+                    310053546894号
+                </p>
+
+                <div id="copyright">
+                    copyright&copy; 1号店网上超市2007-2018，All Rights Reserved
+                </div>
+                <div id="beian">
+                    <img src="../images/cgqcr1pqy1caf7vaaabdexsieym24800.jpg" alt=""/>
+                    <img src="../images/chei1vcfpl2ac1t8aaanfrefjlw97300.jpg" alt=""/>
+                    <img src="../images/chei2lh171kajrglaaall_uzt0e75600.jpg" alt=""/>
+                    <img src="../images/chei1fyxhcoavk_waaal2r2-yfo10200.jpg" alt=""/>
+                    <img src="../images/cgqcrlpytqcaslhxaaad82je0ea31000.png" alt=""/>
+                    <img src="../images/5a706bb1ne3eec0dd.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bill.js"></script>
+</body>
+</html>
