@@ -154,6 +154,18 @@ window.onload=function(){
                             var value = number.val();
                             console.log(parent);
                             if(value == 0){
+                                //当我们的商品数量为零的时候就将该商品从数据库和页面中删除
+                                 //删除商品
+                                // $("#"+gidArr[i]).on("click",".option",function(e){
+                                //     var parent = $(this).parent().parent().parent();
+                                //     parent.remove();
+                                //     $.post("../php/deletegoods.php",{gid: parent.attr("id"),user: _this.user},function(res){
+                                //         alert(res);
+                                //     })
+                                // });
+                                $("#"+gidArr[i]).trigger("click");
+                                xiaoji.text("￥"+parseFloat(price)*parseFloat(number.val()));
+                                 single_all.text("￥"+parseFloat(price)*parseFloat(number.val()));
                                 return;
                             }
                             number.val(--value);
@@ -197,7 +209,9 @@ window.onload=function(){
                         //删除商品
                         $("#"+gidArr[i]).on("click",".option",function(e){
                             var parent = $(this).parent().parent().parent();
+                            parent.find(".choose").removeClass(".icon-xuanzeyixuan");
                             parent.remove();
+                            _this.cacurlate()
                             $.post("../php/deletegoods.php",{gid: parent.attr("id"),user: _this.user},function(res){
                                 alert(res);
                             })
